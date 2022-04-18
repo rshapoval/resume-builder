@@ -5,6 +5,7 @@ import { HEADER } from '../constants/options-tabs'
 
 import FormHeader from '../components/form/FormHeader'
 import OptionsTabs from '../components/form/options-tabs'
+import FormContainer from '../components/form/form-container'
 
 export default function Form () {
   const [option, setOption] = React.useState(HEADER)
@@ -16,6 +17,7 @@ export default function Form () {
         option={option}
         setOption={setOption}
       />
+      <FormContainer option={option} />
     </StyledWrapper>
   )
 }
