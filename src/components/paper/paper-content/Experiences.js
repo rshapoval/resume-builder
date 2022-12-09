@@ -14,7 +14,7 @@ export default function Experiences () {
       {experience.map((item, i) => {
         const jobTitle = get(item, 'jobTitle', '')
         const startEndDate = get(item, 'startEndDate', '')
-        const eployer = get(item, 'eployer', '')
+        const employer = get(item, 'employer', '')
         const description = get(item, 'description', '')
 
         return (
@@ -22,7 +22,7 @@ export default function Experiences () {
             key={i}
             headerTitle={jobTitle}
             period={startEndDate}
-            title={eployer}
+            title={employer}
             text={description}
           />
         )

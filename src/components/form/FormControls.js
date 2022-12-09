@@ -12,7 +12,7 @@ export default function FormControls () {
         onClick={() => {}}
       >
         <VisuallyHidden>Clear resume</VisuallyHidden>
-        X
+        <span aria-hidden='true'>X</span>
       </button>
       <button
         className='button button-download'

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-import InputWithLabel from '../../../common/styles/InputWithLabel'
+import InputWithLabel from '../../../common/InputWithLabel'
 
 export default function EducationView () {
   return (
