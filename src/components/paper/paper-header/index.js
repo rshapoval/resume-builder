@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { get } from 'lodash'
 
-import { example } from '../../../data/example'
+import { example } from '../../../mock/example'
 
 export default function PaperHeader () {
   const fullName = get(example, 'header.fullName', '')

@@ -1,16 +1,30 @@
 import React from 'react'
+import { get } from 'lodash'
+import { useSelector, useDispatch } from 'react-redux'
+
+import { selectHeader } from '../../../features/headerSlice'
+import { setFullName } from '../../../features/headerSlice'
 
 import InputWithLabel from '../../../common/InputWithLabel'
 
 export default function HeaderView () {
+  const header = useSelector(selectHeader)
+  const dispatch = useDispatch()
+
+  const fullName = get(header, 'fullName', '')
+
+  const handleChange = (e) => {
+    dispatch(setFullName(e.target.value))
+  }
+
   return (
     <>
       <InputWithLabel
         label='Full name'
         id='full-name'
-        value=''
+        value={fullName}
         placeholder='Full name'
-        changeHandler={() => {}}
+        changeHandler={handleChange}
       />
       <InputWithLabel
         label='Wanted job title'

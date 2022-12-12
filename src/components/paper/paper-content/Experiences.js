@@ -1,7 +1,7 @@
 import React from 'react'
 import { get } from 'lodash'
 
-import { example } from '../../../data/example'
+import { example } from '../../../mock/example'
 
 import InfoSection from '../../../common/InfoSection'
 
